@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # Load the trained model from the pickle file
-with open('C:/Users/insiy/Downloads/neend3.0/sleep_analysis/sleep_efficiency_model.pkl', 'rb') as model_file:
+with open('sleep_efficiency_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 @app.route('/')
